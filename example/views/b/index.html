@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page B</title>
+  <link rel="prerender" href="../c">
+  <link rel="localization" href="../../locales/app.{locale}.properties">
+
+  <!-- Possible way to declare external view actions? Could get super messy...? -->
+
+  <meta property="action:add:title" data-l10n-id="add">
+  <meta property="action:add:icon" content="add-contact">
+  <meta property="action:add:link" content="views/add">
+
+  <meta property="action:login:title" data-l10n-id="login">
+  <meta property="action:login:link" content="login.html">
+
+  <link rel="stylesheet" href="../panel.css">
+  <script src="../../../node_modules/alameda/alameda.js" data-main="config"></script>
+</head>
+<body class="theme-settings">
+  <h1>Page B</h1>
+  <a href="../c" rel="next">Navigate to C</a>
+</body>
+</html>

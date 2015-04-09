@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Wilson Page <wilsonpage@me.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "base": "gaia-components/base",
+    "font-fit": "gaia-components/font-fit#~0.2.2",
+    "gaia-component": "gaia-components/gaia-component#~0.2.0",
+    "gaia-fonts": "gaia-components/gaia-fonts",
+    "gaia-icons": "gaia-components/gaia-icons#~0.7.0",
+    "gaia-theme": "gaia-components/gaia-theme",
+    "l10n": "https://raw.githubusercontent.com/mozilla-b2g/gaia/master/shared/js/l10n.js",
+    "gaia-header": "gaia-components/gaia-header#master"
+  }
+}

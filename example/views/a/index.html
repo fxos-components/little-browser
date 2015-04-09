@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+<html>
+<head lang="en-US">
+  <meta charset="utf-8">
+  <title>Page A</title>
+
+  <!-- Define what pages should be prerendered -->
+
+  <link rel="prerender" href="../add">
+  <link rel="prerender" href="../b">
+
+  <!-- Locales -->
+
+  <link rel="localization" href="../../locales/app.{locale}.properties">
+
+  <!-- Possible way to declare external view actions? Could get super messy...? -->
+
+  <meta property="action:add:title" data-l10n-id="add">
+  <meta property="action:add:icon" content="add-contact">
+  <meta property="action:add:link" content="views/add">
+  <meta property="action:settings:title" data-l10n-id="settings">
+  <meta property="action:settings:link" content="settings.html">
+  <meta property="action:settings:icon" content="settings">
+
+  <link rel="stylesheet" href="../panel.css">
+  <script src="../../../node_modules/alameda/alameda.js" data-main="config"></script>
+</head>
+<body class="theme-settings">
+  <h1>Page A</h1>
+  <a href="../b" rel="next">Navigate to B</a>
+</body>
+</html>

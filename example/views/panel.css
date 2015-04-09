@@ -1,0 +1,8 @@
+
+@import url(../bower_components/base/base.css);
+@import url(../bower_components/gaia-fonts/style.css);
+@import url(../bower_components/gaia-theme/gaia-theme.css);
+
+body {
+  padding: var(--base-m);
+}

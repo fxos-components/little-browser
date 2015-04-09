@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>gaia-view</title>
+  <meta name="description" content="Demo app for Custom Element based headers">
+  <link rel="stylesheet" type="text/css" href="bower_components/base/base.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/gaia-theme/gaia-theme.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/gaia-fonts/style.css">
+  <script src="bower_components/gaia-theme/lib/gaia-theme-selector.js"></script>
+  <script src="bower_components/gaia-component/gaia-component.js"></script>
+  <script src="gaia-view.js"></script>
+  <style>
+
+
+  </style>
+</head>
+
+<body class="l-pt-mega">
+  <gaia-theme-selector></gaia-theme-selector>
+  <gaia-view src=""></gaia-view>
+  <script>
+  (function() {
+    var el = document.querySelector('gaia-view');
+    el.navigate();
+  })();
+  </script>
+</body>
+</html>

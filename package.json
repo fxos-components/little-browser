@@ -1,0 +1,40 @@
+{
+  "name": "gaia-view",
+  "version": "0.6.5",
+  "homepage": "https://github.com/gaia-components/gaia-view",
+  "license": "MIT",
+  "main": "gaia-view.js",
+  "devDependencies": {
+    "adapt-pkg-main": "^1.0.1",
+    "alameda": "git://github.com/requirejs/alameda",
+    "browserify": "^8.1.3",
+    "http-server": "^0.7.4",
+    "karma": "^0.12.16",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-mocha": "^0.1.3",
+    "karma-sinon-chai": "^0.1.6",
+    "mozilla-download": "^0.4.3"
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "test": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
+    "test-dev": "./node_modules/karma/bin/karma start test/karma.conf.js",
+    "adapt": "adapt-pkg-main bower_components configFileNames=bower.json,.bower.json,package.json",
+    "build": "browserify -x gaia-component -s GaiaWebview lib/little-browser.js > ./little-browser.js && browserify -s GaiaWebview lib/little-browser.js > ./little-browser.bundle.js && browserify lib/runtime.js > ./runtime.js",
+    "start": "http-server -c-1"
+  },
+  "watch": {
+    "build": "{lib,node_modules}/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gaia-components/gaia-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gaia-components/gaia-view/issues"
+  },
+  "dependencies": {
+    "gaia-component": "git://github.com/gaia-components/gaia-component",
+    "threads": "git://github.com/gaia-components/threads"
+  }
+}

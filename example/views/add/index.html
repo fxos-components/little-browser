@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+<html>
+<head lang="en-US">
+  <meta charset="utf-8">
+  <title>Add a contact</title>
+
+  <!-- Locales -->
+  <link rel="localization" href="../../locales/app.{locale}.properties">
+
+  <!-- Define the header-action type -->
+  <meta property="navigation:type" content="back">
+  <meta property="navigation:link" content="referrer">
+
+  <!-- Define the name of the view-panel's service -->
+  <meta property="service" content="add-view">
+
+  <!-- Define a save action button which calls the 'submit' service method -->
+  <meta property="action:save:title" data-l10n-id="save">
+  <meta property="action:save:on:click" content="submit">
+
+  <!-- Dependencies -->
+  <link rel="stylesheet" href="../panel.css">
+  <script src="../../../node_modules/alameda/alameda.js" data-main="config"></script>
+</head>
+<body class="theme-settings">
+  <label data-l10n-id="save"></label>
+  <form>
+    <input type="text" placeholder="Name">
+  </form>
+</body>
+</html>
