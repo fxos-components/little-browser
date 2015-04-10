@@ -19,6 +19,6 @@
   ],
   "dependencies": {
     "gaia-component": "gaia-components/gaia-component#~0.2.0",
-    "threads": "gaia-components/threads",
+    "threads": "gaia-components/threads"
   }
 }
