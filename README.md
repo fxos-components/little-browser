@@ -8,8 +8,4 @@ $ bower install gaia-components/little-browser
 
 ## Example
 
-1. `git clone https://github.com/gaia-components/little-browser.git`
-2. `npm install`
-3. `bower install`
-4. `npm start`
-5. `open http://localhost:8080/example/#/views/a`
+[Photo-browse](https://github.com/gmarty/photo-browse) is the best example of `<little-browser>` in action.
